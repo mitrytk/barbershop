@@ -1,0 +1,228 @@
+/* Шрифты
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+:root {
+    --title-color: #303030;
+    --text-color-first: #9DA4BD;
+    --text-color-second: #555555;
+    --accent-color: #FF6C00;
+    --white-color: #FFFFFF;
+}
+
+body {
+    margin: 0;
+}
+    
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title {
+
+}
+
+.button {
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+
+    background-color: transparent;
+    color: inherit;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16/12);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+.button:hover,
+.button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+/* --Индивидуальные классы-- */
+
+/* -header- */
+
+.header { 
+    color: var(--white-color);
+    background-color: gray;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16/12);
+    letter-spacing: 0.1em;
+}
+/* Навигация */
+
+.navigation-link:hover,
+.navigation-link:focus {
+    color: var(--accent-color);
+}
+
+/* Main */
+
+/* Герой */
+.sidebar {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+
+    letter-spacing: 0.2em;
+
+    color: var(--title-color);
+}
+.hero-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+
+    text-transform: uppercase;
+
+    color: rgba(157, 164, 189, 0.6);
+
+}
+.hero-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: calc(85/72);
+    letter-spacing: 0.05em;
+
+    color: var(--white-color);
+}
+.hero-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(30/18);
+    letter-spacing: 0.02em;
+
+    color: var(--text-color-first);
+}
+.slider-back {
+    border: none;
+    color: rgba(157, 164, 189, 0.6);
+    background-color: transparent;
+
+    font-family: 'Open Sans', sans-serif;  
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    letter-spacing: 0.1em;
+}
+.slider-Forward{
+    border: none;
+    color: var(--white-color);
+    background-color: transparent;
+
+    font-family: 'Open Sans', sans-serif;  
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    letter-spacing: 0.1em;
+}
+
+/* about */
+.about-subtitle {
+    font-family: 'Open Sans', sans-serif;   
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+
+    text-transform: uppercase;
+
+    color: var(--title-color);
+}
+.about-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49/42);
+    letter-spacing: 0.05em;
+
+    color: var(--title-color);
+}
+.about-accenttext {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(30/18);
+
+    letter-spacing: 0.02em;
+
+    color: var(--text-color-second);
+}
+.about-text {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px;
+    line-height: calc(26/14);
+
+    letter-spacing: 0.02em;
+
+    color: var(--text-color-second);
+}
+
+/* Services and prices */
+.prices-subtitle {
+    font-family: 'Open Sans', sans-serif;   
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+
+    text-transform: uppercase;
+
+    color: var(--title-color);
+}
+.prices-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49/42);
+    letter-spacing: 0.05em;
+
+    color: var(--title-color);
+}
+.prices-list {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 18px;
+    line-height: calc(30/18);
+    letter-spacing: 0.02em;
+
+    color: var(--text-color-first);
+}
