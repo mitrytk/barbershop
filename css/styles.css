@@ -11,9 +11,15 @@ font-family: 'Raleway', sans-serif;
     --accent-color: #FF6C00;
     --white-color: #FFFFFF;
 }
-
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--title-color);
 }
     
 ul,
@@ -43,11 +49,31 @@ p {
     text-decoration: none;
     color: inherit;
 }
-
-.title {
-
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
+.subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
 
+    text-transform: uppercase;
+}
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49/42);
+    letter-spacing: 0.05em;
+}
+.text {
+    font-size: 18px;
+    line-height: calc(30/18);
+    letter-spacing: 0.02em;
+    color: var(--text-color-second);
+}
 .button {
     padding-top: 12px;
     padding-right: 20px;
@@ -71,53 +97,102 @@ p {
     color: var(--white-color);
     background-color: var(--accent-color);
 }
+.hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
 
 /* --Индивидуальные классы-- */
 
 /* -header- */
 
 .header { 
-    color: var(--white-color);
-    background-color: gray;
+    display: flex;
+    align-items: center;
+    padding-right: 32px;
 
-    font-family: 'Open Sans', sans-serif;
+    color: var(--white-color);
+    background-color: #6A6B6F;
+
     font-weight: 600;
     font-size: 12px;
     line-height: calc(16/12);
     letter-spacing: 0.1em;
 }
 /* Навигация */
-
+.navigation {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+}
+.navigation-list {
+    display: flex;
+    align-items: center;
+    margin-left: 131px;
+}
+.navigation-items + .navigation-items {
+    margin-left: 30px;
+}
+.navigation-link {
+    display: block;
+    padding: 20px 0;
+}
 .navigation-link:hover,
-.navigation-link:focus {
+.navigation-link:focus,
+.connect-tel:hover,
+.connect-tel:focus {
     color: var(--accent-color);
 }
 
+/* телефон и кнопка */
+.header-connect {
+    margin-left: auto;
+}
+.connect-items + .connect-items {
+    margin-left: 43px;
+}
 /* Main */
 
 /* Герой */
+.hero-container {
+    display: flex;
+    height: 680px;
+}
 .sidebar {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: calc(15/11);
-
     letter-spacing: 0.2em;
-
-    color: var(--title-color);
+}
+.sidebar-link {
+    display: block;
+    width: 115px;
+    transform: rotate(-90deg);
+   color: var(--title-color); 
+}
+.hero-box {
+    display: flex;
+    width: 1070px;
+    padding-top: 272px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 100px;
+    background-color: #6A6B6F;
+}
+.hero-main {
+    width: 444px;
 }
 .hero-subtitle {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: calc(15/11);
-
-    text-transform: uppercase;
+    margin-bottom: 20px;
 
     color: rgba(157, 164, 189, 0.6);
-
 }
 .hero-title {
+    margin-bottom: 20px;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 72px;
@@ -127,13 +202,12 @@ p {
     color: var(--white-color);
 }
 .hero-text {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: calc(30/18);
-    letter-spacing: 0.02em;
-
     color: var(--text-color-first);
+}
+.slider-button {
+    display: flex;
+    margin-top: auto;
+    margin-left: auto;
 }
 .slider-back {
     border: none;
@@ -160,36 +234,13 @@ p {
 
 /* about */
 .about-subtitle {
-    font-family: 'Open Sans', sans-serif;   
-    font-weight: 600;
-    font-size: 11px;
-    line-height: calc(15/11);
-
-    text-transform: uppercase;
-
-    color: var(--title-color);
 }
 .about-title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: calc(49/42);
-    letter-spacing: 0.05em;
-
-    color: var(--title-color);
 }
 .about-accenttext {
-    font-family: 'Open Sans', sans-serif; 
-    font-weight: 400;
-    font-size: 18px;
-    line-height: calc(30/18);
-
-    letter-spacing: 0.02em;
-
     color: var(--text-color-second);
 }
 .about-text {
-    font-family: 'Open Sans', sans-serif; 
     font-size: 14px;
     line-height: calc(26/14);
 
@@ -200,29 +251,58 @@ p {
 
 /* Services and prices */
 .prices-subtitle {
-    font-family: 'Open Sans', sans-serif;   
+}
+.prices-title {
+}
+.prices-list {
+    color: var(--text-color-first);
+}
+
+/* Почему мы */
+.whywe-list {
     font-weight: 600;
     font-size: 11px;
     line-height: calc(15/11);
-
-    text-transform: uppercase;
+    text-align: center;
 
     color: var(--title-color);
 }
-.prices-title {
-    font-family: 'Raleway', sans-serif;
+.num {
     font-weight: 700;
     font-size: 42px;
-    line-height: calc(49/42);
+    line-height: calc(57/42);
     letter-spacing: 0.05em;
-
-    color: var(--title-color);
 }
-.prices-list {
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 18px;
-    line-height: calc(30/18);
-    letter-spacing: 0.02em;
 
+/* our barbers */
+.ourbarbers-desc {
+    font-size: 18px;
+    line-height: calc(25/18);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.ourbarbers-prof {
+    font-size: 14px;
+    line-height: calc(19/14);
+
+    color: var(--accent-color);
+}
+
+/* contacts */
+.address-list a {
     color: var(--text-color-first);
+}
+.contacts-subtitle {
+    color: var(--white-color);
+}
+.contacts-text {
+    color: var(--text-color-first);
+}
+/* footer */
+.copy {
+    color: var(--text-color-first);
+}
+.footer-social a {
+    color: var(--title-color);
+    letter-spacing: 0.2em;
 }
