@@ -294,6 +294,9 @@ img {
     justify-content: space-between;
     margin-left: 30px;
 }
+.about-content > div:nth-child(1) {
+    max-width: 470px;
+}
 .about-title {
 }
 .about-accenttext {
