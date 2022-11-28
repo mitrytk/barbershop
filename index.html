@@ -42,14 +42,16 @@
         <!-- Герой -->
         <section class="hero">
             <div class="hero-container container">
-                <ul class="sidebar subtitle list">
-                    <li class="sibebar-items">
-                        <a class="sidebar-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">Instagram</a>
-                    </li>
-                    <li class="sibebar-items">
-                        <a class="sidebar-link link" href="http://youtube.com" target="_blank" rel="noreferrer noopener">Youtube</a>
-                    </li>
-                </ul>
+                <div class="sidebar-container">
+                    <ul class="sidebar subtitle list subtitle-line">
+                        <li class="sibebar-items">
+                            <a class="sidebar-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">Instagram</a>
+                        </li>
+                        <li class="sibebar-items">
+                            <a class="sidebar-link link" href="http://youtube.com" target="_blank" rel="noreferrer noopener">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="hero-box">
                     <div class="hero-main">
                         <p class="hero-subtitle subtitle">A hair salon for men in Kyiv</p>
@@ -69,42 +71,50 @@
             </div>
         </section>
         <!-- about -->
-        <section class="about">
-            <ul class="about-list list">
-                <li><img class="about-img" src="./images/shaving.jpg" alt="shave their beard" width="270" height="445"></li>
-                <li><img class="about-img" src="./images/haircut.jpg" alt="cut hair" width="270" height="445"></li>
-            </ul>
-            <div>
-                <p class="about-subtitle subtitle">About</p>
-                <h2 class="about-title title">Best Barbershop in your city</h2>
-                <p class="about-accenttext text">If you want to add more confidence to your image, you should definitely visit us.</p>
-                <p class="about-text">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
-                <button class="button" type="button">Online-booking</button>
+        <section class="about section">
+            <div class="container-about container">
+                <ul class="about-list list">
+                    <li class="about-item"><img class="about-img" src="./images/shaving.jpg" alt="shave their beard" width="270" height="445"></li>
+                    <li class="about-item"><img class="about-img" src="./images/haircut.jpg" alt="cut hair" width="270" height="445"></li>
+                </ul>
+                <div class="about-content">
+                    <div>
+                        <p class="about-subtitle subtitle-line subtitle margin-text">About</p>
+                        <h2 class="about-title title margin-text">Best Barbershop in your city</h2>
+                        <p class="about-accenttext text margin-text">If you want to add more confidence to your image, you should definitely visit us.</p>
+                        <p class="about-text">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
+                    </div>
+                    <div>
+                        <button class="about-button button" type="button">Online-booking</button>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Services and prices -->
-        <section class="prices">
-            <p class="prices-subtitle subtitle">Spend your time with the best masters</p>
-            <h2 class="prices-title title">Services and prices</h2>
-            <ul class="prices-list text list">
-                <li>
-                    <ul class="list">
-                        <li><span>Men’s haircut</span><span>from 300 uah.</span></li>
-                        <li><span>Beard trim</span><span>from 300 uah.</span></li>
-                        <li><span>Mustache trim</span><span>from 200 uah.</span></li>
-                        <li><span>Straight razor shave</span><span>from 200 uah.</span></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="list">
-                        <li><span>Trainee’s haircut</span><span>from 50 uah.</span></li>
-                        <li><span>Haircut under the nozzle</span><span>from 200 uah.</span></li>
-                        <li><span>Children’s haircut (0-12 y.o.)</span><span>from 300 uah.</span></li>
-                        <li><span>Camouflage of gray hair</span><span>from 200 uah.</span></li>
-                    </ul>
-                </li>
-            </ul>
-            <button class="button" type="button">Online-booking</button>
+        <section class="prices section">
+            <div class="prices-container container">
+                <p class="prices-subtitle subtitle subtitle-line margin-text">Spend your time with the best masters</p>
+                <h2 class="prices-title title">Services and prices</h2>
+                <ul class="prices-list text list">
+                    <li class="prices-item">
+                        <ul class="list">
+                            <li class="part-prices"><span>Men’s haircut</span><span class="prices-element">from 300 uah.</span></li>
+                            <li  class="part-prices"><span>Beard trim</span><span class="prices-element">from 300 uah.</span></li>
+                            <li  class="part-prices"><span>Mustache trim</span><span class="prices-element">from 200 uah.</span></li>
+                            <li  class="part-prices"><span>Straight razor shave</span><span class="prices-element">from 200 uah.</span></li>
+                        </ul>
+                    </li>
+                    <li class="prices-item">
+                        <ul class="list">
+                            <li  class="part-prices"><span>Trainee’s haircut</span><span class="prices-element">from 50 uah.</span></li>
+                            <li  class="part-prices"><span>Haircut under the nozzle</span><span class="prices-element">from 200 uah.</span></li>
+                            <li  class="part-prices"><span>Children’s haircut (0-12 y.o.)</span><span class="prices-element">from 300 uah.</span></li>
+                            <li  class="part-prices"><span>Camouflage of gray hair</span><span class="prices-element">from 200 uah.</span></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="button-prices button" type="button">Online-booking</button>
+            </div>
         </section>
         <!-- Why a we -->
         <section class="whywe">
@@ -154,22 +164,18 @@
                     <ul class="list">
                         <li>
                             <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                                <img src="./images/instagram.svg" alt="instagram logo" width="44" height="44">
                             </a>
                         </li>
                         <li>
                             <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                                <img src="./images/twitter.svg" alt="twitter logo" width="44" height="44">
                             </a>
                         </li>
                         <li>
                             <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                                <img src="./images/facebook.svg" alt="facebook logo" width="44" height="44">
                             </a>
                         </li>
                         <li>
                             <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                                <img src="./images/linkedin.svg" alt="linkedin logo" width="44" height="44">
                             </a>
                         </li> 
                     </ul>
@@ -179,25 +185,21 @@
                     <p class="ourbarbers-desc">Michele Doe <span class="ourbarbers-prof">Extreme Barber</span></p>
                     <ul class="list">
                         <li>
-                            <a href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                                <img src="./images/instagram.svg" alt="instagram logo" width="44" height="44">
+                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
                             </a>
                         </li>
                         <li>
-                            <a href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                                <img src="./images/twitter.svg" alt="twitter logo" width="44" height="44">
+                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
                             </a>
                         </li>
                         <li>
-                            <a href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                                <img src="./images/facebook.svg" alt="facebook logo" width="44" height="44">
+                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
                             </a>
                         </li>
                         <li>
-                            <a href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                                <img src="./images/linkedin.svg" alt="linkedin logo" width="44" height="44">
+                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
                             </a>
-                        </li>
+                        </li> 
                     </ul>
                 </li>
                 <li>
@@ -205,25 +207,21 @@
                     <p class="ourbarbers-desc">Alan Black <span class="ourbarbers-prof">Extreme Barber</span></p>
                     <ul class="list">
                         <li>
-                            <a href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                                <img src="./images/instagram.svg" alt="instagram logo" width="44" height="44">
+                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
                             </a>
                         </li>
                         <li>
-                            <a href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                                <img src="./images/twitter.svg" alt="twitter logo" width="44" height="44">
+                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
                             </a>
                         </li>
                         <li>
-                            <a href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                                <img src="./images/facebook.svg" alt="facebook logo" width="44" height="44">
+                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
                             </a>
                         </li>
                         <li>
-                            <a href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                                <img src="./images/linkedin.svg" alt="linkedin logo" width="44" height="44">
+                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
                             </a>
-                        </li>
+                        </li> 
                     </ul>
                 </li>
             </ul>
@@ -245,16 +243,13 @@
             <address>
                 <ul class="address-list list">
                     <li>
-                        <img src="./images/maps.svg" alt="maps icon" width="24">
                         <a class="address-link text link" href="https://goo.gl/maps/AK9gsvEv8uj4qtoM9" target="_blank" rel="noreferrer noopener">st. Vasilkivska, 7A
                             Kyiv, 08132</a>
                     </li>
                     <li>
-                        <img src="./images/phone.svg" alt="phone icon" width="24">
                         <a class="tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
                     </li>
                     <li>
-                        <img src="./images/mail.svg" alt="mail icon" width="24">
                         <a class="mail-link link" href="mailto:barbershop@email.com">barbershop@email.com</a>
                     </li>
                 </ul>
