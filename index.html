@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BarberShop</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -18,16 +18,16 @@
                 <a class="link" href="./index.html"><img src="./images/Logo.svg" alt="logo" width="69"></a>
                 <ul class="navigation-list list">
                     <li class="navigation-items">
-                        <a class="navigation-link link" href="">About</a>
+                        <a class="navigation-link link" href="#about">About</a>
                     </li>
                     <li class="navigation-items">
-                        <a class="navigation-link link" href="">Services and prices</a>
+                        <a class="navigation-link link" href="#prices">Services and prices</a>
                     </li>
                     <li class="navigation-items">
-                        <a class="navigation-link link" href="">Barbers</a>
+                        <a class="navigation-link link" href="#ourbarbers">Barbers</a>
                     </li>
                     <li class="navigation-items">
-                        <a class="navigation-link link" href="">Contacts</a>
+                        <a class="navigation-link link" href="#contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -71,7 +71,7 @@
             </div>
         </section>
         <!-- about -->
-        <section class="about section">
+        <section class="about section" id="about">
             <div class="container-about container">
                 <ul class="about-list list">
                     <li class="about-item"><img class="about-img" src="./images/shaving.jpg" alt="shave their beard" width="270" height="445"></li>
@@ -91,7 +91,7 @@
             </div>
         </section>
         <!-- Services and prices -->
-        <section class="prices section">
+        <section class="prices section" id="prices">
             <div class="prices-container container">
                 <p class="prices-subtitle subtitle subtitle-line margin-text">Spend your time with the best masters</p>
                 <h2 class="prices-title title">Services and prices</h2>
@@ -117,157 +117,234 @@
             </div>
         </section>
         <!-- Why a we -->
-        <section class="whywe">
-            <ul class="whywe-list list">
-                <li>
-                    <p>
-                        <span class="num">600</span>
-                        Satisfied customers per day
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <span class="num">50</span>
-                        Awards for excellent service
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <span class="num">20</span>
-                        Kyiv’s best 
-                        barbers
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <span class="num">100</span>
-                        Gifts for regular customers
-                    </p>
-                </li>
-            </ul>
-            <div>
-                <p class="subtitle">Old traditional school</p>
-                <h2 class="title">¿Why people come to us?</h2>
-                <p class="text">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
+        <section class="whywe section">
+            <div class="whywe-container container">
+                <ul class="whywe-list list">
+                    <li>
+                        <ul class="list">
+                            <li class="whywe-item">
+                                <p class="whywe-num">
+                                    <span class="num">600</span>
+                                    Satisfied customers per day
+                                </p>
+                            </li>
+                            <li class="whywe-item">
+                                <p class="whywe-num">
+                                    <span class="num">20</span>
+                                    Kyiv’s best 
+                                    barbers
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="whywe-listblock list">
+                            <li class="whywe-item">
+                                <p class="whywe-num">
+                                    <span class="num">50</span>
+                                    Awards for excellent service
+                                </p>
+                            </li>
+                            <li class="whywe-item">
+                                <p class="whywe-num">
+                                    <span class="num">100</span>
+                                    Gifts for regular customers
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="whywe-info">
+                    <p class="whywe-subtitle subtitle subtitle-line margin-text">Old traditional school</p>
+                    <h2 class="whywe-title title margin-text">¿Why people come to us?</h2>
+                    <p class="whywe-text text">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
+                </div>
             </div>
         </section>
         <!-- our barbers -->
-        <section class="ourbarbers">
-            <div>
-                <p class="subtitle">For true enjoyers of the atmosphere</p>
-                <h2 class="title">Our barbers</h2>
-            </div>
-            <ul class="list">
-                <li>
-                    <img src="./images/John_Smith.jpg" alt="John Smith" width="370" height="346">
-                    <p class="ourbarbers-desc">John Smith <span class="ourbarbers-prof">Extreme Barber</span></p>
-                    <ul class="list">
-                        <li>
-                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                            </a>
-                        </li> 
-                    </ul>
-                </li>
-                <li>
-                    <img src="./images/Michele_Doe.jpg" alt="Michele Doe" width="370" height="346">
-                    <p class="ourbarbers-desc">Michele Doe <span class="ourbarbers-prof">Extreme Barber</span></p>
-                    <ul class="list">
-                        <li>
-                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                            </a>
-                        </li> 
-                    </ul>
-                </li>
-                <li>
-                    <img src="./images/Alan_Black.jpg" alt="Alan Black" width="370" height="346">
-                    <p class="ourbarbers-desc">Alan Black <span class="ourbarbers-prof">Extreme Barber</span></p>
-                    <ul class="list">
-                        <li>
-                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
-                            </a>
-                        </li> 
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <!-- gallery -->
-        <section class="gallery">
-            <p class="subtitle">In Latin, "barba" means "beard"</p>
-            <h2 class="hide">gallery</h2>
-            <ul class="list">
-                <li><img src="./images/haircut_scissors.jpg" alt="haircut scissors" width="270" height="360"></li>
-                <li><img src="./images/straight_razor.jpg" alt="straight razor" width="270" height="360"></li>
-                <li><img src="./images/towel_drying.jpg" alt="towel drying" width="270" height="360"></li>
-                <li><img src="./images/nape_haircut.jpg" alt="nape haircut" width="270" height="360"></li>
-            </ul>
-        </section>
-        <!-- contacts -->
-        <section class="contacts">
-            <h2 class="title">Contacts</h2>
-            <address>
-                <ul class="address-list list">
-                    <li>
-                        <a class="address-link text link" href="https://goo.gl/maps/AK9gsvEv8uj4qtoM9" target="_blank" rel="noreferrer noopener">st. Vasilkivska, 7A
-                            Kyiv, 08132</a>
+        <section class="ourbarbers section" id="ourbarbers">
+            <div class="ourbarbers-container container">
+                <div>
+                    <p class="subtitle subtitle-line margin-text">For true enjoyers of the atmosphere</p>
+                    <h2 class="ourbarbers-title title">Our barbers</h2>
+                </div>
+                <ul class="ourbarbers-list list">
+                    <li class="ourbarbers-items">
+                        <img class="ourbarbers-img" src="./images/John_Smith.jpg" alt="John Smith" width="370" height="346">
+                        <div class="ourbarbers-info">
+                            <p class="ourbarbers-desc">John Smith</p>
+                            <p class="ourbarbers-prof">Extreme Barber</p>
+                            <ul class="social-list list">
+                                <li class="social-item">
+                                    <a class="social-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
                     </li>
-                    <li>
-                        <a class="tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+                    <li class="ourbarbers-items">
+                        <img class="ourbarbers-img" src="./images/Michele_Doe.jpg" alt="Michele Doe" width="370" height="346">
+                        <div class="ourbarbers-info">
+                            <p class="ourbarbers-desc">Michele Doe</p>
+                            <p class="ourbarbers-prof">Extreme Barber</p>
+                            <ul class="social-list list">
+                                <li class="social-item">
+                                    <a class="social-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
                     </li>
-                    <li>
-                        <a class="mail-link link" href="mailto:barbershop@email.com">barbershop@email.com</a>
+                    <li class="ourbarbers-items">
+                        <img class="ourbarbers-img" src="./images/Alan_Black.jpg" alt="Alan Black" width="370" height="346">
+                        <div class="ourbarbers-info">
+                            <p class="ourbarbers-desc">Alan Black</p>
+                            <p class="ourbarbers-prof">Extreme Barber</p>
+                            <ul class="social-list list">
+                                <li class="social-item">
+                                    <a class="social-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
                     </li>
                 </ul>
-            </address>
-            <p class="contacts-subtitle subtitle">Working hours</p>
-            <p class="contacts-text text">Every day from 9:00 to 22:00</p>
+            </div>
+        </section>
+        <!-- gallery -->
+        <section class="gallery section">
+            <div class="gallery-container container">
+                <p class="gallery-subtitle subtitle subtitle-line">In Latin, "barba" means "beard"</p>
+                <h2 class="hide">gallery</h2>
+                <ul class="gallery-list list">
+                    <li class="gallery-item"><img src="./images/haircut_scissors.jpg" alt="haircut scissors" width="270" height="360"></li>
+                    <li class="gallery-item"><img src="./images/straight_razor.jpg" alt="straight razor" width="270" height="360"></li>
+                    <li class="gallery-item"><img src="./images/towel_drying.jpg" alt="towel drying" width="270" height="360"></li>
+                    <li class="gallery-item"><img src="./images/nape_haircut.jpg" alt="nape haircut" width="270" height="360"></li>
+                </ul>
+            </div>
+        </section>
+        <!-- contacts -->
+        <section class="contacts section" id="contacts">
+            <div class="contacts-container container">
+                <div class="online-booking contacts-part">
+
+                </div>
+                <div class="contacts-part">
+                    <h2 class="contacts-title title">Contacts</h2>
+                    <address class="address address-contacts">
+                        <ul class="address-list list">
+                            <li class="address-items margin-text">
+                                <a class="address-link text link" href="https://goo.gl/maps/AK9gsvEv8uj4qtoM9" target="_blank" rel="noreferrer noopener">
+                                    <svg class="address-icon maps-icon" width="24" height="24">
+                                        <use href="./images/symbol-defs.svg#icon-maps"></use>
+                                    </svg>st. Vasilkivska, 7A <br>
+                                    Kyiv, 08132</a>
+                            </li>
+                            <li class="address-items margin-text">
+                                <a class="address-link link" href="tel:+380441111111">
+                                    <svg class="address-icon" width="24" height="24">
+                                        <use href="./images/symbol-defs.svg#icon-phone"></use>
+                                    </svg>+38 044 111 11 11</a>
+                            </li>
+                            <li class="address-items margin-text">
+                                <a class="address-link mail-link link" href="mailto:barbershop@email.com">
+                                    <svg class="address-icon" width="24" height="24">
+                                        <use href="./images/symbol-defs.svg#icon-mail"></use>
+                                    </svg>barbershop@email.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                <p class="contacts-subtitle subtitle subtitle-line margin-text">Working hours</p>
+                <p class="contacts-text text">Every day from 9:00 to 22:00</p></div>
+            </div>
         </section>
     </main>
     <!-- footer -->
-    <footer>
-        <p class="copy">&#169; Copyright 2020</p>
-        <ul class="footer-social subtitle list">
-            <li>
-                <a class="link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">Instagram</a>
-            </li>
-            <li>
-                <a class="link" href="http://youtube.com" target="_blank" rel="noreferrer noopener">Youtube</a>
-            </li>
-        </ul>
-    </footer>
+    <footer class="footer">
+        <div class="footer-container container">
+            <p class="copy">&#169; Copyright 2020</p>
+            <ul class="footer-social subtitle list">
+                <li class="footer-social-items">
+                    <a class="link footer-link" href="http://instagram.com" target="_blank" rel="noreferrer noopener">Instagram</a>
+                </li>
+                <li class="footer-social-items">
+                    <a class="link footer-link" href="http://youtube.com" target="_blank" rel="noreferrer noopener">Youtube</a>
+                </li>
+            </ul>
+        </div>
+    </footer>  
+</body>
 </html>

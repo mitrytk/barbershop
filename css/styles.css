@@ -10,6 +10,8 @@ font-family: 'Raleway', sans-serif;
     --text-color-second: #555555;
     --accent-color: #FF6C00;
     --white-color: #FFFFFF;
+    --second-background-color: #F7F7F7;
+    --third-background-color: #191C26;
 }
 *,
 *::before,
@@ -41,10 +43,16 @@ p {
     margin: 0;
 }
 
+.address {
+    font-style: normal;
+}
 img {
     display: block;
 }
-
+svg {
+    display: block;
+    fill: currentColor;
+}
 .list {
     list-style: none;
 }
@@ -372,7 +380,17 @@ img {
 }
 
 /* Почему мы */
+.whywe-container {
+    display: flex;
+    padding-left: 130px;
+    padding-right: 70px;
+}
 .whywe-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 400px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: calc(15/11);
@@ -380,14 +398,75 @@ img {
 
     color: var(--title-color);
 }
+.whywe-item {
+    width: 170px;
+    min-height: 133px;
+    padding: 20px 24px;
+    margin-bottom: 30px;
+
+    background-color: #F7F7F7;
+}
+.whywe-listblock {
+    margin-left: 30px;
+    padding-top: 35px;
+}
+.whywe-num {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    text-align: center;
+}
 .num {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+
     font-weight: 700;
     font-size: 42px;
     line-height: calc(57/42);
     letter-spacing: 0.05em;
 }
+.num::after {
+    content: "+";
+    display: block;
+    padding-top: 7px;
+    margin-left: 2px;
+
+    color: var(--accent-color);
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(22/16);
+    vertical-align: top;
+}
+.whywe-info {
+    margin-left: auto;
+    width: 500px;
+}
+.whywe-title {
+    width: 430px;
+}
 
 /* our barbers */
+.ourbarbers {
+    background-color: var(--second-background-color);
+}
+.ourbarbers-title {
+    margin-bottom: 40px;
+}
+.ourbarbers-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.ourbarbers-items {
+    margin: 15px;
+}
+.ourbarbers-img {
+    margin-bottom: 30px;
+}
+.ourbarbers-info {
+}
 .ourbarbers-desc {
     font-size: 18px;
     line-height: calc(25/18);
@@ -395,15 +474,78 @@ img {
     letter-spacing: 0.02em;
 }
 .ourbarbers-prof {
+    margin-bottom: 30px;
+
     font-size: 14px;
     line-height: calc(19/14);
+    letter-spacing: 0.02em;
+    text-align: center;
 
     color: var(--accent-color);
 }
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+.social-item + .social-item {
+    margin-left: 10px;
+}
+.social-link {
+    display: block;
+    padding: 12px;
+    border-radius: 50%;
 
+    background-color: var(--white-color);
+}
+.social-link:hover,
+.social-link:focus {
+    color: var(--accent-color);
+}
+
+/* gallery */
+.gallery-subtitle {
+    margin-bottom: 44px;
+}
+.gallery-list {
+    display: flex;
+    justify-content: space-between;
+}
+.gallery-item {
+
+}
 /* contacts */
-.address-list a {
-    color: var(--text-color-first);
+.contacts {
+    background-color: var(--third-background-color);
+    background-image: url(../images/bg-contacts.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 1600px;
+    margin: 0 auto;
+}
+.contacts-container {
+    display: flex;
+}
+.online-booking {
+    width: 600px;
+}
+.contacts-part:nth-child(2) {
+    padding-top: 10px;
+    padding-left: 100px;
+}
+.address-contacts {
+    margin-bottom: 70px;
+}
+.contacts-title {
+    margin-bottom: 40px;
+
+    color: var(--white-color);
+}
+.contacts-subtitle.subtitle-line::before {
+    background-color: var(--text-color-first);
+}
+.address-items:nth-child(1) {
+    font-weight: 700;
 }
 .contacts-subtitle {
     color: var(--white-color);
@@ -411,11 +553,56 @@ img {
 .contacts-text {
     color: var(--text-color-first);
 }
+.address-link {
+    display: flex;
+    align-items: center;
+    color: var(--text-color-first);
+}
+.address-link:hover,
+.address-link:focus {
+    color: var(--second-background-color);
+}
+.address-link:hover .address-icon,
+.address-link:focus .address-icon{
+    stroke: var(--second-background-color);
+}
+.mail-link {
+    text-decoration-line: underline;
+}
+.address-icon {
+    margin-right: 16px;
+    fill: none;
+    stroke: var(--text-color-first);
+}
+.maps-icon {
+    transform: translateY(-50%);
+}
 /* footer */
+.footer {
+    display: flex;
+    align-items: center;
+    min-height: 127px;
+
+    background-color: var(--second-background-color);
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
 .copy {
     color: var(--text-color-first);
+}
+.footer-social::before {
+    content:"";
+    width: 60px;
+    height: 1px;
+
+    background-color: var(--title-color);
 }
 .footer-social a {
     color: var(--title-color);
     letter-spacing: 0.2em;
+}
+.footer-social-items {
+    margin-left: 40px;
 }
