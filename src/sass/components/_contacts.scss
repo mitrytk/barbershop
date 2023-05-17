@@ -1,0 +1,113 @@
+.contacts {
+    background-color: var(--third-background-color);
+
+    max-width: 1600px;
+    margin: 0 auto;
+
+    &__container {
+        @extend %container;
+
+        display: flex;
+    }
+
+    &__title {
+        @extend %title;
+        margin-bottom: 40px;
+
+        color: var(--white-color);
+    }
+
+    &__subtitle {
+        @extend %margin-text;
+
+        display: flex;
+        align-items: center;
+
+        color: var(--white-color);
+
+        font-weight: 600;
+        font-size: 11px;
+        line-height: calc(15/11);
+
+        text-transform: uppercase;
+
+        &::before {
+            content: "";
+            width: 60px;
+            height: 1px;
+            margin-right: 20px;
+
+            background-color: var(--text-color-first);
+        }
+    }
+
+    &__text {
+        @extend %text;
+        color: var(--text-color-first);
+    }
+}
+
+.address-contacts {
+    margin-bottom: 70px;
+
+    &__list {
+        @extend %list;
+    }
+
+    &__items {
+        @extend %text;
+        @extend %margin-text;
+    }
+
+    &__items:nth-child(1) {
+        font-weight: 700;
+    }
+
+    &__link {
+        @extend %link;
+
+        display: flex;
+        align-items: center;
+        color: var(--text-color-first);
+
+        &:hover,
+        &:focus {
+            color: var(--second-background-color);
+        }
+
+        &:hover .address-icon,
+        &:focus .address-icon {
+            stroke: var(--second-background-color);
+        }
+    }
+
+    &__icon {
+        margin-right: 16px;
+        fill: none;
+        stroke: var(--text-color-first);
+    }
+}
+
+.online-booking {
+    width: 50%;
+    height: 100%;
+}
+
+.contacts-part:nth-child(2) {
+    width: 50%;
+    background-image: url(../images/bg-contacts.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 130px;
+    padding-bottom: 120px;
+    padding-left: 100px;
+}
+
+.mail-link {
+    text-decoration-line: underline;
+}
+
+.maps-icon {
+    transform: translateY(-50%);
+}

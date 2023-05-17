@@ -1,0 +1,23 @@
+// utils
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './utils/fonts';
+@import './base/reset-styles';
+@import './base/vs';
+@import './base/common';
+
+// header
+@import './components/navigation';
+@import './components/connect-bar';
+// main
+@import './components/hero';
+@import './components/about';
+@import './components/prices';
+@import './components/why-we';
+@import './components/our-barbers';
+@import './components/gallery';
+@import './components/contacts';
+// footer
+@import './components/footer';
+// modal

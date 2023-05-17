@@ -1,0 +1,20 @@
+.gallery {
+    @extend %section;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__subtitle {
+        @extend %subtitle;
+
+        margin-bottom: 44px;
+    }
+
+    &__list {
+        @extend %list;
+
+        display: flex;
+        justify-content: space-between;
+    }
+}

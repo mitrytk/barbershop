@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    align-items: center;
+    min-height: 127px;
+
+    background-color: var(--second-background-color);
+
+    &__container {
+        @extend %container;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.copy {
+    color: var(--text-color-first);
+}
+
+.footer-social {
+    @extend %list;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 1px;
+
+        background-color: var(--title-color);
+    }
+
+    &__items {
+        margin-left: 40px;
+    }
+
+    &__link {
+        @extend %link;
+        color: var(--title-color);
+        letter-spacing: 0.2em;
+    }
+}

@@ -1,0 +1,19 @@
+:root {
+    --title-color: #303030;
+    --text-color-first: #9DA4BD;
+    --text-color-second: #555555;
+    --accent-color: #FF6C00;
+    --white-color: #FFFFFF;
+    --second-background-color: #F7F7F7;
+    --third-background-color: #191C26;
+
+
+    --function-animation: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$preMobile: 479.98px;
+$mobile: 480px;
+$preTablet: 767.98px;
+$tablet: 768px;
+$preDesktop: 1199.98px;
+$desktop: 1200px;

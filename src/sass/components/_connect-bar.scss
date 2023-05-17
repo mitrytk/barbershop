@@ -1,0 +1,15 @@
+.header-connect {
+    margin-left: auto;
+
+    & button {
+        @extend %button;
+    }
+}
+
+.connect-tel {
+    @extend %link;
+}
+
+.connect-items+.connect-items {
+    margin-left: 43px;
+}

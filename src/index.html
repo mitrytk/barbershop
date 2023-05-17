@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1200" />
+    <title>BarberShop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header-container">
+        <include src="./partials/navigation.html"></include>
+        <include src="./partials/connect-bar.html"></include>
+      </div>
+    </header>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/prices.html"></include>
+      <include src="./partials/why-we.html"></include>
+      <include src="./partials/our-barbers.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <include src="./partials/footer.html"></include>
+    </footer>
+    <!-- script -->
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

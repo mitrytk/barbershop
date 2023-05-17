@@ -1,0 +1,36 @@
+.header-container {
+    @extend %container;
+
+    display: flex;
+    align-items: center;
+    padding-right: 32px;
+    left: 50%;
+
+    position: absolute;
+    z-index: 1;
+
+    color: var(--white-color);
+    transform: translateX(-50%);
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16/12);
+    letter-spacing: 0.1em;
+}
+
+.is-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+body.is-fixed {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}

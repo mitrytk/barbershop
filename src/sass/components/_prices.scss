@@ -1,0 +1,84 @@
+.prices {
+    @extend %section;
+    margin: 0 auto;
+    max-width: 1600px;
+    background: url(../images/bg-prices.png);
+    background-color: #111319;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__subtitle {
+        @extend %subtitle;
+        @extend %margin-text;
+        color: #9DA4BD99;
+    }
+
+    &__title {
+        @extend %title;
+        margin-bottom: 44px;
+
+        color: var(--white-color);
+    }
+
+    &__list {
+        @extend %list;
+        @extend %text;
+
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 44px;
+
+        color: var(--text-color-first);
+    }
+
+    &__item {
+        width: 570px;
+        padding: 30px 20px;
+
+        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+
+    &__item:nth-child(2) {
+        background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
+
+    &__sub-list {
+        @extend %list;
+    }
+
+    &__element {
+        display: flex;
+        flex-grow: 1;
+        align-items: baseline;
+
+        padding-left: 12px;
+
+        &::before {
+            content: "";
+            display: block;
+            margin-right: 12px;
+
+            height: 1px;
+            background-color: #9DA4BD1F;
+            flex-grow: 1;
+        }
+    }
+
+    &__button {
+        @extend %button;
+
+        display: block;
+        margin: 0 auto;
+        color: var(--white-color)
+    }
+}
+
+.part-prices {
+    position: relative;
+    display: flex;
+}

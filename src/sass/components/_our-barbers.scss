@@ -1,0 +1,80 @@
+.ourbarbers {
+    @extend %section;
+
+    background-color: var(--second-background-color);
+
+    &__container {
+        @extend %container;
+    }
+
+    &__subtitle {
+        @extend %subtitle;
+        @extend %margin-text;
+    }
+
+    &__title {
+        @extend %title;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        @extend %list;
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    &__items {
+        margin: 15px;
+    }
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+    &__desc {
+        font-size: 18px;
+        line-height: calc(25/18);
+        text-align: center;
+        letter-spacing: 0.02em;
+    }
+
+    &__prof {
+        margin-bottom: 30px;
+
+        font-size: 14px;
+        line-height: calc(19/14);
+        letter-spacing: 0.02em;
+        text-align: center;
+
+        color: var(--accent-color);
+    }
+}
+
+.social {
+    &__list {
+        @extend %list;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item+&__item {
+        margin-left: 10px;
+    }
+
+    &__link {
+        @extend %link;
+
+        display: block;
+        padding: 12px;
+        border-radius: 50%;
+
+        background-color: var(--white-color);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+}
