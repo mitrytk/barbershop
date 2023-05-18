@@ -2,14 +2,14 @@
   "name": "barbershop",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://mitrytk.github.io/BarberShop/",
+  "homepage": "https://mitrytk.github.io/barbershop",
   "scripts": {
-    "start": "parcel src/*.html --open",
+    "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /barbershop/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mitrytk/barbershop.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
@@ -18,19 +18,13 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "body-scroll-lock": "^4.0.0-beta.0",
-    "flatpickr": "^4.6.13",
-    "lodash.debounce": "^4.0.8",
-    "modern-normalize": "^1.1.0",
-    "lodash.uniq": "^4.5.0"
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
-    "date-fns": "^2.29.3",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4",
-    "sweetalert": "^2.1.2"
+    "posthtml-include": "^1.7.4"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
